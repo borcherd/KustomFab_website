@@ -1,0 +1,183 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  background: black;
+  color: white;
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  line-height: 2;
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+
+}
+p {
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+h1 {
+  color: #5eb2ff;
+}
+h4 {
+  margin-top: 30px;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+  width: auto;
+  max-width: 860px;
+  padding: 0 15px;
+}
+
+.container .credit {
+  margin: 20px 0;
+}
+
+.page-header {
+  border: 0;
+  margin: 30px 0 10px;
+}
+
+.bs-sidenav {
+  background-color: #2d2d2d;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding: 10px 0;
+  text-shadow: 0 1px 0 black;
+  width: 185px;
+}
+
+.bs-sidebar .nav > li > a {
+  display: block;
+  color: #fff;
+  padding: 5px 20px;
+}
+
+hr {
+  margin: 30px 0 0;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+section h3 {
+  margin: 0 0 20px;
+  padding-top: 30px;
+}
+
+section li {
+  margin-bottom: 20px;
+}
+
+section img {
+  width: 615px;
+}
+
+/* Nav styles */
+
+.nav.nav-pills li {
+  margin-right: 10px;
+}
+
+/* Overview */
+
+.overview {}
+
+.overview-contents {
+  background: #191919;
+  margin: 0 17px;
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+.overview table {}
+
+.caption {
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Prettify styles */
+pre {
+  font-size: 12px;
+  line-height: 20px;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  width: 615px;
+  white-space: pre-wrap;
+}
+
+pre:hover {
+  box-shadow: 0 0 20px #7C7C7C;
+  margin-left: -120px;
+  width: 860px;
+}
+
+.lnums {
+  -webkit-box-shadow: inset 40px 0 0 #FBFBFC, inset 41px 0 0 #ECECF0;
+  -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+  box-shadow: inset 40px 0 0 #FBFBFC, inset 41px 0 0 #ECECF0;
+}
+
+ol {
+  padding: 0;
+}
+
+ol li {
+  margin: 0;
+}
+
+.bs-callout {
+  border-left: 3px solid #EEE;
+  font-size: 1.3em;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.bs-callout-info {
+  background-color: #191919;
+  border-color: #00d4ff;
+}
+
+.bs-callout-info h4 {
+  color: #3A87AD;
+}
+
+.bs-callout h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: #232323;
+}
+
+code {
+  color: #c78125;
+  background-color: #525252;
+}

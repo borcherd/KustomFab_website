@@ -1,0 +1,82 @@
+block vars
+doctype html
+html(lang="en")
+  head
+    title KustomFab - Rod 'n kustom shop
+    link(rel="stylesheet" href="css/libs.css")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(charset="utf-8")
+    block styles
+    link(rel="stylesheet" href="css/main.css")
+    link(rel="stylesheet" href="css/style-switcher.css")
+  body(data-spy="scroll", data-target="#navbar-toggle", class="dark")
+    block navigation
+      // Header starts
+      header.header-section(class=headerClass)
+
+        nav.navbar.nav.navbar-fixed-top.navbar-expand-lg(class=navClass)
+          a.logo.navbar-brand(href="#") KFAB
+          if !noNav
+            button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbar-toggle", aria-controls="navbar-toggle", aria-expanded="false", aria-label="Toggle navigation")
+              span
+              span
+              span
+
+            if !subPage
+              #navbar-toggle.collapse.navbar-collapse
+                ul.navbar-nav.ml-md-auto.nav
+                  li.nav-item
+                    a.nav-link(href="#intro-section") Home
+                  li.nav-item
+                    a.nav-link(href="#services-section") Services
+                  li.nav-item
+                    a.nav-link(href="#portfolio") Portfolio
+                  li.nav-item
+                    a.nav-link(href="#about-us") About
+                  li.nav-item
+                    a.nav-link(href="#contact") Contact
+            else
+              #navbar-toggle.collapse.navbar-collapse
+                ul.navbar-nav.ml-md-auto.nav
+                  li.nav-item
+                    a.nav-link(href="index.html#intro-section") Home
+                  li.nav-item
+                    a.nav-link(href="index.html#services-section") Services
+                  li.nav-item
+                    a.nav-link(href="index.html#portfolio") Portfolio
+                  li.nav-item
+                    a.nav-link(href="index.html#about-us") About
+                  li.nav-item
+                    a.nav-link(href="/#contact") Contact
+          
+      // Header ends
+    block content
+    block foot
+      // Footer section starts
+      #footer
+        .container
+          .row.align-items-center
+            .col-md-8
+              p.mb-sm-2.mb-2-xs Website by Borcherd. &copy; 2021 All rights reserved.
+            .col-md-4
+              ul.list-inline.footer-nav.text-sm-center.text-md-right
+                li.list-inline-item
+                  a(href="#")
+                    i.icon-twitter-circled
+                li.list-inline-item
+                  a(href="#")
+                    i.icon-facebook-circled
+                li.list-inline-item
+                  a(href="#")
+                    i.icon-instagram-1
+                li.list-inline-item
+                  a(href="#")
+                    i.icon-github-circled
+      // Footer section ends
+    include photo-gallery
+    //- include style-switcher
+    block scripts
+      // Placed at the end of the document so the pages load faster
+      script(src='js/plugins-min.js')
+      if !noScripts
+        script(src='js/main.js')

@@ -1,0 +1,50 @@
+extends layout.pug
+append styles
+  link(rel="stylesheet" href="css/flipclock.css")
+
+append vars
+  - var headerClass = 'dark'
+  - var subPage = true
+block content
+  .page-header.page-header-1
+  .container.pt50
+    .row
+      .col-md-12
+        h2.text-center.mt-md-5 Launching in the new year!
+        p.sub-title.text-center Stay tuned for updates
+    
+  .container.pt50
+    .row
+      .col
+      .col-md-auto
+        .countdown-timer
+      .col
+    .row
+      .col-md-4.offset-md-4
+        p.sub-title.text-center.pt-5.mb-1 Subscribe to our newsletter to stay up to date, we don't like spam either
+        form.minimal-form.text-center.mt-5.mb120(action="./" method="get")
+          .form-group
+            input(name="email" type="email" placeholder="Email Address...")
+            button(type="submit")
+              i.fa.fa-envelope-open-o
+
+append scripts
+  script(src="js/flipclock.min.js")
+  script.
+    $(document).ready(function() {
+
+      // Grab the current date
+      var currentDate = new Date();
+
+      // Set some date in the future. In this case, it's always Jan 1
+      var futureDate  = new Date(currentDate.getFullYear() + 1, 0, 1);
+
+      // Calculate the difference in seconds between the future and current date
+      var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+      // Instantiate a coutdown FlipClock
+      clock = $('.countdown-timer').FlipClock(diff, {
+        clockFace: 'DailyCounter',
+        countdown: true
+      });
+    });

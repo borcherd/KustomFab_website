@@ -1,0 +1,31 @@
+extends layout.pug
+append styles
+  link(rel="stylesheet" href="css/flipclock.css")
+
+append vars
+  - var headerClass = 'dark'
+  - var subPage = true
+block content
+  section.content.dark
+    .container.pt120
+      .row
+        .col-md-12
+          h1.text-large.text-center.mt-md-5 404
+          h3.text-center What you seek is not here...
+      
+    .container
+      .row
+        .col-md-4.offset-md-4
+          p.sub-title.text-center.pt-5.mb-1 Try searching on our site
+          form.minimal-form.text-center.mt-4.mb-4(action="./" method="get")
+            .form-group
+              input(name="search" type="text" placeholder="Search..." required)
+              button(type="submit")
+                i.fa.fa-search
+      .row
+        .col-md-4.offset-md-4.text-center
+          p.mb-4
+            strong OR
+          p
+            a.btn.btn-outline-primary.btn-huge.mb120(href="/") Go Home Instead
+

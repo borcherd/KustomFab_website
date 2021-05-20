@@ -1,0 +1,260 @@
+extends layout.pug
+block content
+  // Intro section starts
+  #intro-section
+    //- Calling the slider markup
+    include slider.pug
+  // Intro section ends
+  // Marketing section starts
+  section#services-section
+    .container.pt120
+      h2.text-center Our Services
+      p.sub-title.text-center You think it, we do it
+      .row.text-center
+        .col-md-4.col-sm-4
+          .product-card
+            .icon.mb20
+              i.fa.fa-superpowers(aria-hidden="true")
+            h4 Welding 
+            p Welding and grinding is part of our everyday routine. This can vary from doing "top-chops" to removing rust.
+        .col-md-4.col-sm-4
+          .product-card
+            .icon.mb20
+              i.fa.fa-pied-piper(aria-hidden="true")
+            h4 Chassis overhaul
+            p We can do everything to make your ride more comfortable. We create custom four/two link systems, new bodymounts, modernize axles etc.
+        .col-md-4.col-sm-4
+          .product-card
+            .icon.mb20
+              i.fa.fa-puzzle-piece(aria-hidden="true")
+            h4 Body work
+            p Everything that is made out of steel, is our speciality. We modify bodywork on nearly every car before 1970.
+      .row.text-center
+        .col-md-4.col-sm-4
+          .product-card
+            .icon.mb20
+              i.fa.fa-mercury(aria-hidden="true")
+            h4 Air-ride systems
+            p If you want your car as low as possible, air ride is the way to go. We install air ride specific systems on every chassis.
+        .col-md-4.col-sm-4
+          .product-card
+            .icon.mb20
+              i.fa.fa-object-ungroup(aria-hidden="true")
+            h4 Engine swaps
+            p Old cars often don't have the power they should have, and this can be solved by modernizing the drivetrain. 
+        .col-md-4.col-sm-4
+          .product-card
+            .icon.mb20
+              i.fa.fa-line-chart(aria-hidden="true")
+            h4 Electical wiring
+            p We do everything from fixing electrical issues, to converting an older car to 12v.
+  // Marketing section ends
+  // Portfolio section starts
+  section#portfolio    
+    .container.pt120
+      h2.text-center Our work
+      p.sub-title.text-center Here are some examples of our work!
+      .row
+        .col-md-12
+          .filters-group.text-center
+            .filter-options
+              button.btn.active(data-group="all") All
+              button.btn(data-group="Bodywork") Bodywork
+              button.btn(data-group="Chassiswork") Chassiswork
+              button.btn(data-group="Engine") Engine
+              button.btn(data-group="Electrical") Electrical
+          #my-shuffle-container.row.no-gutters
+            a.col-md-4.picture-item(href="#", data-groups="[\"bridge\", \"city\"]", data-title="Bay Bridge")
+              .aspect.aspect--16x9
+                .aspect__inner
+                  img(src="http://via.placeholder.com/601x338" alt="Portfolio Image")
+                  .caption-container
+                    .caption-alignment-container
+                      p.caption Bay Bridge
+            
+            a.col-md-4.picture-item(data-groups="[\"mountains\"]", data-title="Mountains")
+              .aspect.aspect--16x9
+                .aspect__inner
+                  img(src="http://via.placeholder.com/601x338" alt="Portfolio Image")
+                  .caption-container
+                    .caption-alignment-container
+                      p.caption Mountains
+            
+            a.col-md-4.picture-item(data-groups="[\"city\"]", data-title="Cityscape")
+              .aspect.aspect--16x9
+                .aspect__inner
+                  img(src="http://via.placeholder.com/601x338" alt="Portfolio Image")
+                  .caption-container
+                    .caption-alignment-container
+                      p.caption Cityscape
+            
+            a.col-md-4.picture-item(data-groups="[\"bridge\", \"city\"]", data-title="Bay Bridge")
+              .aspect.aspect--16x9
+                .aspect__inner
+                  img(src="http://via.placeholder.com/601x338" alt="Portfolio Image")
+                  .caption-container
+                    .caption-alignment-container
+                      p.caption Bay Bridge
+            
+            a.col-md-4.picture-item(data-groups="[\"mountains\"]", data-title="Mountains")
+              .aspect.aspect--16x9
+                .aspect__inner
+                  img(src="http://via.placeholder.com/601x338" alt="Portfolio Image")
+                  .caption-container
+                    .caption-alignment-container
+                      p.caption Mountains
+            
+            a.col-md-4.picture-item(data-groups="[\"city\"]", data-title="Cityscape")
+              .aspect.aspect--16x9
+                .aspect__inner
+                  img(src="http://via.placeholder.com/601x338" alt="Portfolio Image")
+                  .caption-container
+                    .caption-alignment-container
+                      p.caption Cityscape
+            
+            a.col-md-4.picture-item(data-groups="[\"tech\"]", data-title="Products")
+              .aspect.aspect--16x9
+                .aspect__inner
+                  img(src="http://via.placeholder.com/601x338" alt="Portfolio Image")
+                  .caption-container
+                    .caption-alignment-container
+                      p.caption Products
+            
+            a.col-md-4.picture-item(data-groups="[\"mountains\"]", data-title="Mountains")
+              .aspect.aspect--16x9
+                .aspect__inner
+                  img(src="http://via.placeholder.com/601x338" alt="Portfolio Image")
+                  .caption-container
+                    .caption-alignment-container
+                      p.caption Mountains
+            
+            a.col-md-4.picture-item(data-groups="[\"city\"]", data-title="Cityscape")
+              .aspect.aspect--16x9
+                .aspect__inner
+                  img(src="http://via.placeholder.com/601x338" alt="Portfolio Image")
+                  .caption-container
+                    .caption-alignment-container
+                      p.caption Cityscape          
+  // Portfolio section ends
+  
+  section#re-imagined
+    .container
+      .row.pt120.align-items-center
+        .col-md-7.p90
+          h2 Completely Reimagined
+          p.sub-title What is this car, you might ask? This is a 1934 Renault Monaquatre. The car has been fully redone. It has a custom chassis, custom body, powered by a modern V8 with a FiTech injection.
+          a.btn.btn-lg(href="#") Learn more
+        .col-md-5
+          img(src="http://via.placeholder.com/325x600" alt="Product Preview")
+  // Re-imagined section ends
+              
+  section#prod-showcase
+    .container.pt120
+      .row
+        .col-md-12
+          h2.text-center Compare and see
+          p.sub-title.text-center Compare different variants
+      .row
+        .col-md-12
+          #image-split.twentytwenty-container 
+            img(src="http://via.placeholder.com/963x374" alt="Product comparison image")
+            img(src="http://via.placeholder.com/963x374" alt="Product comparison image")
+  // Product showcase section ends
+          
+  section#about-us
+    .container.pt120.pb50
+      .row
+        .col-md-12
+          h2.text-center About Us
+      .row
+        .col-md-6
+          img(src="http://via.placeholder.com/954x647" alt="About us")
+        .col-md-6
+          h3 Who am I?
+          p My name is Phil. My passion for cars started at a young age, I was customizing cars before I even had my license. Back then, it wasn't as serious and I just saw it as a hobby.
+          blockquote Good cars get you from A to B. Great cars, well they just get you into trouble.
+          p The reason that I created my own business around customizing old cars, is that I want to see them driving around more and more, and I would like to help achieve that goal. 
+  // About us section ends
+  
+  #map.pt120
+    #google-map
+  // Map section ends
+  
+  section#contact
+    .container-fluid
+      .row.align-items-center
+        .col-md-6.p90
+          h2 Get In Touch
+          p.sub-title Let's create the custom car of your dreams!
+          ul.list-unstyled
+            li
+              i.icon-phone
+              |+32-468128195
+            li
+              i.icon-mail-1
+              |info@kfab.com
+            li
+              i.icon-address-card
+              |Zandstraat 21A, 3960 Maasmechelen
+          
+        .col-md-6.form-wrapper
+          form(method="post", action="send-mail.php")
+            .form-group
+              input.form-control(type="text", placeholder="Your name", name="name", required)
+            .form-group
+              input.form-control(type="email", placeholder="Your email", name="email", required)
+            .form-group
+              input.form-control(type="tel", placeholder="Your phone", name="phone")
+            .form-group
+              textarea.form-control(rows="5", placeholder="Your Message", name="message")
+            button.btn.btn-lg(type="submit") Send Message
+
+append scripts
+  script(async, defer, src!="https://maps.googleapis.com/maps/api/js?key=PUT-KEY-HERE&callback=initMap")
+  script.
+    // Setting up Revolution slider with a solid cross-browser code waiting for the page to load
+    function loadJSAtOnload() {
+      var canl = jQuery;
+      var revapi1042;
+      canl(document).ready(function() {
+        if(canl("#rev_slider_1").revolution == undefined){
+          revslider_showDoubleJqueryError("#rev_slider_1");
+        } else {
+          revapi1042 = canl('#rev_slider_1').show().revolution({
+            sliderType: "hero",
+            sliderLayout: "fullscreen",
+            dottedOverlay:"none",
+            delay:9000,
+            navigation: {
+            },
+            responsiveLevels:[1240,1024,778,480],
+            visibilityLevels:[1240,1024,778,480],
+            gridwidth:[1400,1240,778,480],
+            gridheight:[768,768,960,720],
+            lazyType:"none",
+            spinner:"off",
+            autoHeight:"off",
+            disableProgressBar:"on",
+            hideThumbsOnMobile:"off",
+            hideSliderAtLimit:0,
+            hideCaptionAtLimit:0,
+            hideAllCaptionAtLilmit:0,
+            debugMode:false,
+            fallbacks: {
+              simplifyAll:"off",
+              disableFocusListener:false,
+            }
+          });
+        }
+      });
+    }
+    if (window.addEventListener) {
+      window.addEventListener("load", loadJSAtOnload, false);
+    }
+    else if (window.attachEvent) {
+      window.attachEvent("onload", loadJSAtOnload);
+    }
+    else {
+      window.onload = loadJSAtOnload;
+    }
+

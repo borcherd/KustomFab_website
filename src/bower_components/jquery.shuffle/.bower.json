@@ -1,0 +1,13 @@
+{
+  "name": "jquery.shuffle",
+  "homepage": "https://github.com/caphun/jquery.shuffle",
+  "_release": "9cf47a1590",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "9cf47a15907378534a8327231825cbf4c6cbddf3"
+  },
+  "_source": "https://github.com/caphun/jquery.shuffle.git",
+  "_target": "*",
+  "_originalSource": "jquery.shuffle"
+}

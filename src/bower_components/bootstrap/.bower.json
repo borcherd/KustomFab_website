@@ -1,0 +1,13 @@
+{
+  "name": "bootstrap",
+  "homepage": "https://github.com/twbs/bootstrap",
+  "_release": "c8e581afbb",
+  "_resolution": {
+    "type": "branch",
+    "branch": "v4-dev",
+    "commit": "c8e581afbbd23d28a77415aac4bdb21bd382a5a9"
+  },
+  "_source": "https://github.com/twbs/bootstrap.git",
+  "_target": "v4-dev",
+  "_originalSource": "bootstrap"
+}

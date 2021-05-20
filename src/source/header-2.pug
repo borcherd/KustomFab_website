@@ -1,0 +1,46 @@
+extends layout.pug
+append styles
+  link(rel="stylesheet" href="css/flipclock.css")
+
+append vars
+  - var headerClass = 'dark'
+  - var subPage = true
+block content
+  .page-header.page-header-2
+    h3.page-title.text-center.breadcrumb-title About
+    ul.breadcrumbs.list-inline.text-center
+      li.list-inline-item
+        a Culture
+      li.list-inline-item
+        a Team
+      li.list-inline-item
+        a Employee
+    
+  section#about-us
+    .container.pt90.pb50
+      .row
+        .col-md-12
+          h2.mb-5 Another page title
+      .row.pb-5
+        .col-md-4
+          h3 Heading here
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta incidunt culpa, laborum itaque molestias quae consequatur provident amet in fugit numquam illum deleniti cumque consectetur, tempore doloribus error obcaecati sequi?
+        .col-md-8
+          h3 Another longer title
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta incidunt culpa, laborum itaque molestias quae consequatur provident amet in fugit numquam illum deleniti.
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta incidunt culpa, laborum itaque molestias quae consequatur provident amet in fugit numquam illum deleniti cumque consectetur, tempore doloribus error obcaecati sequi?
+      .row.pb-5
+        .col-md-4
+          h3 Heading here
+          p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque minima nemo ducimus atque asperiores laudantium enim fugiat animi.
+        .col-md-4
+          h3 Heading here
+          p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque minima nemo ducimus atque asperiores laudantium enim fugiat animi.
+        .col-md-4
+          h3 Heading here
+          p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque minima nemo ducimus atque asperiores laudantium enim fugiat animi.
+      .row.pb-5
+        .col-md-12
+          h3 Longer heading goes here
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum optio ab explicabo voluptates similique earum dignissimos aliquid et maiores doloribus sit rerum corrupti quod, facere hic. Ipsa veritatis a nisi! Ipsum optio ab explicabo voluptates similique earum dignissimos aliquid et maiores doloribus sit rerum corrupti quod, facere hic. Ipsa veritatis a nisi!
+          p Ipsum optio ab explicabo voluptates similique earum dignissimos aliquid et maiores doloribus sit rerum corrupti quod, facere hic. Ipsa veritatis a nisi! Ipsum optio ab explicabo voluptates similique earum dignissimos aliquid et maiores doloribus sit rerum corrupti quod, facere hic. Ipsa veritatis a nisi!

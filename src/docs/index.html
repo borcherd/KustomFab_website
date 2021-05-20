@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>Canal HTML documentation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="css/doc-style.css" rel="stylesheet">
+
+  <style type="text/css"></style></head>
+
+  <body>
+
+    <!-- Wrap all page content here -->
+    <div id="wrap">
+
+      <!-- Begin page content -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="bs-sidebar hidden-print affix-top" role="complementary" data-spy="affix" data-offset-top="40">
+              <ul class="nav bs-sidenav">
+                <li class="active"><a href="#overview">Overview</a></li>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="#markup">Markup</a></li>
+                <li><a href="#styles">Styles</a></li>
+                <li><a href="#js">Javascript</a></li>
+                <li><a href="#rev-js">Revolution Slider</a></li>
+                <li><a href="#gmap">Google Map Setup</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="page-header">
+              <h1 style="margin: 0 0 10px;">Canal HTML documentation</h1>
+            </div>
+            <hr style="margin:0 0 30px;" />
+            <p class="lead">
+              Thank you &amp; congratulations for purchasing Canal HTML template! This documentation will serve as a
+              guide in case you want to customize any component of the template.
+            </p>
+            <p>
+              However, if you have any questions that are beyond the scope of this help file, please feel free to email via my
+              user page contact form <a href="http://themeforest.net/user/vishu">here</a>.
+            </p>
+            <hr />
+            <section id="overview">
+              <h3>Overview <small>Basic info</small></h3>
+              <div class="row">
+                <div class="overview-contents">
+                  <div class="col-md-4">
+                    <p>
+                      <strong>Author:</strong><br/>
+                      Vishu
+                    </p>
+                    <p>
+                      <strong>Contact:</strong><br/>
+                      <a href="mailto:vishu.unlocker@gmail.com">visingh.in@gmail.com</a>
+                    </p>
+                  </div>
+                  <div class="col-md-4">
+                    <p>
+                      <strong>Author URL:</strong><br/>
+                      <a href="http://www.vishusingh.com">http://www.vishusingh.com</a>
+                    </p>
+                    <p>
+                      <strong>Current Version:</strong><br/>
+                      1.0.0
+                    </p>
+                  </div>
+                  <div class="col-md-4">
+                    <p>
+                      <strong>Documentation Version:</strong><br/>
+                      1.0.0
+                    </p>
+                    <p>
+                      <strong>Created:</strong><br/>
+                      14 Nov, 2017
+                    </p>
+                  </div>
+                </div>
+                <!-- /.overview-contents -->
+              </div>
+            </section>
+            <!-- overview ends -->
+            <hr />
+            <section id="installation">
+              <h3>Installation <small>How to Install the Template</small></h3>
+              <p>Installing the html template is fairly simple, all you have to do is upload the right files to your server.</p>
+              <ul>
+                <li>Extract the .zip file named canal-html.zip to your hard drive, upload it's contents to your server using your favorite ftp client, doing this will install the template.</li>
+                <li>If you uploaded to the root directory then the template should be accessible at <code>http://www.yourdomain.com</code>, or if you uploaded it inside a directory on your server then it'd be accessible at <code>http://www.yourdomain.com/directory</code>.</li>
+              </ul>
+              <h4>About the placeholder images</h4>
+              <p>
+                Here's the <a href="https://unsplash.com/collections/1263787/canal" target="_blank">unsplash.com collection</a> that contains images used in the template demo.
+              </p>
+              <strong>Revolution Slider on homepage --</strong>
+              <p>
+                Below is the excerpt from revolution slider's markup on homepage (<code>index.html</code>)
+              </p>
+<pre class="prettyprint linenums:60 lnums">
+&#x3C;!-- Intro section starts--&#x3E;
+    &#x3C;section id=&#x22;intro-section&#x22;&#x3E;
+      &#x3C;div class=&#x22;rev_slider_wrapper fullwidthbanner-container&#x22; style=&#x22;margin:0px auto;background-color:#c9d5dc;padding:0px;margin-top:0px;margin-bottom:0px;&#x22;&#x3E;
+        &#x3C;div class=&#x22;rev_slider&#x22; id=&#x22;rev_slider_1&#x22; data-version=&#x22;5.4.5&#x22; style=&#x22;display:none;&#x22;&#x3E;
+          &#x3C;ul&#x3E;
+            &#x3C;li data-index=&#x22;rs-3074&#x22; data-transition=&#x22;fade&#x22; data-slotamount=&#x22;default&#x22; data-hideafterloop=&#x22;0&#x22; data-hideslideonmobile=&#x22;off&#x22; data-easein=&#x22;default&#x22; data-easeout=&#x22;default&#x22; data-masterspeed=&#x22;1500&#x22; data-rotate=&#x22;0&#x22; data-saveperformance=&#x22;off&#x22; data-title=&#x22;Intro&#x22;&#x3E;
+              &#x3C;!-- MAIN IMAGE--&#x3E;&#x3C;img class=&#x22;rev-slidebg&#x22; src=&#x22;css/assets/images/transparent.png&#x22; alt=&#x22;&#x22; data-bgposition=&#x22;center center&#x22; data-bgfit=&#x22;cover&#x22; data-bgrepeat=&#x22;no-repeat&#x22; data-bgparallax=&#x22;5&#x22; data-no-retina=&#x22;&#x22;&#x3E;
+              &#x3C;!-- LAYERS--&#x3E;
+              &#x3C;!-- LAYER NR. 1--&#x3E;
+              &#x3C;div class=&#x22;tp-caption tp-resizeme rs-parallaxlevel-6&#x22; id=&#x22;slide-3074-layer-1&#x22; data-x=&#x22;[&#x27;right&#x27;,&#x27;right&#x27;,&#x27;center&#x27;,&#x27;center&#x27;]&#x22; data-hoffset=&#x22;[&#x27;-254&#x27;,&#x27;-453&#x27;,&#x27;70&#x27;,&#x27;60&#x27;]&#x22; data-y=&#x22;[&#x27;middle&#x27;,&#x27;middle&#x27;,&#x27;middle&#x27;,&#x27;bottom&#x27;]&#x22; data-voffset=&#x22;[&#x27;30&#x27;,&#x27;50&#x27;,&#x27;211&#x27;,&#x27;25&#x27;]&#x22; data-width=&#x22;none&#x22; data-height=&#x22;none&#x22; data-whitespace=&#x22;nowrap&#x22; data-type=&#x22;image&#x22; data-responsive_offset=&#x22;on&#x22; data-frames=&#x22;[{&#x26;quot;from&#x26;quot;:&#x26;quot;x:right;&#x26;quot;,&#x26;quot;speed&#x26;quot;:1500,&#x26;quot;to&#x26;quot;:&#x26;quot;o:1;&#x26;quot;,&#x26;quot;delay&#x26;quot;:2500,&#x26;quot;ease&#x26;quot;:&#x26;quot;Power3.easeOut&#x26;quot;},{&#x26;quot;delay&#x26;quot;:&#x26;quot;wait&#x26;quot;,&#x26;quot;speed&#x26;quot;:1500,&#x26;quot;to&#x26;quot;:&#x26;quot;opacity:0;&#x26;quot;,&#x26;quot;ease&#x26;quot;:&#x26;quot;Power4.easeIn&#x26;quot;}]&#x22; data-textalign=&#x22;[&#x27;left&#x27;,&#x27;left&#x27;,&#x27;left&#x27;,&#x27;left&#x27;]&#x22; data-paddingtop=&#x22;[0,0,0,0]&#x22; data-paddingright=&#x22;[0,0,0,0]&#x22; data-paddingbottom=&#x22;[0,0,0,0]&#x22; data-paddingleft=&#x22;[0,0,0,0]&#x22; style=&#x22;z-index: 5;text-transform:left;border-width:0px;&#x22;&#x3E;
+              &#x3C;img src=&#x22;css/assets/images/macbookpro.png&#x22; alt=&#x22;&#x22; data-ww=&#x22;[&#x27;1000px&#x27;,&#x27;1000px&#x27;,&#x27;500px&#x27;,&#x27;350px&#x27;]&#x22; data-hh=&#x22;[&#x27;600px&#x27;,&#x27;600px&#x27;,&#x27;300px&#x27;,&#x27;210px&#x27;]&#x22; width=&#x22;1000&#x22; height=&#x22;600&#x22; data-no-retina=&#x22;&#x22;&#x3E;
+              &#x3C;/div&#x3E;
+
+      ...
+</pre>
+            <p>
+              Notice the <code>img</code> tag in the markup above, it is the main background of the slide and has source , set it to your image to load it in the slider. Same goes for other <code>img</code> tags within the slider <code>ul</code>.
+            </p>
+
+            </section>
+
+
+
+            <!-- installation ends -->
+            <hr />
+            <section id="markup">
+              <h3>Markup <small>General structure &amp; customizations</small></h3>
+              <div class="bs-callout bs-callout-info">
+                <p>The theme is built on Bootstrap 4.0.0-beta, check out it's <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/">documentation</a> for more info.</p>
+              </div>
+
+              <h4>Built on <a href="https://pugjs.org/api/getting-started.html">PugJS</a></h4>
+              <p>
+                Optionally, you can take advantage of the power of pugjs to customize this template, Pug is a efficient way to write clean HTML markup.
+              </p>
+              <p>
+                Canal is built on modular pug templates which can be found in the 'Pug-Source' folder in the downloaded package, it also comes with a <a href="https://codekitapp.com/">Codekit</a> config file that you can optionally use to set up your project if using Codekit.
+              </p>
+              <div class="bs-callout bs-callout-info">
+                <p>
+                  If you're not into all that PugJS templating stuff, you can of course edit the HTML files directly.
+                </p>
+              </div>
+              <h4>General markup</h4>
+              <p>The general markup structure for the theme is as follows, the content is divided into modular <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section" target="_blank">sections</a> and formatted using bootstrap's latest <a href="https://getbootstrap.com/docs/4.0/layout/grid/" target="_blank">flexbox powered grid system</a>, i.e. classes like <code>col-md-9</code> etc</p>
+<pre class="prettyprint linenums">
+  &#x3C;!DOCTYPE html&#x3E;
+  &#x3C;html&#x3E;
+    &#x3C;head&#x3E;
+      &#x3C;title&#x3E;Canal - Multipurpose HTML theme&#x3C;/title&#x3E;
+      &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;bower_components/bootstrap/dist/css/bootstrap.min.css&#x22;&#x3E;
+      &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/entypo.css&#x22;&#x3E;
+      &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;https://fonts.googleapis.com/css?family=Dosis:400,500,600,700&#x26;amp;subset=latin-ext&#x22;&#x3E;
+      &#x3C;meta name=&#x22;viewport&#x22; content=&#x22;width=device-width, initial-scale=1&#x22;&#x3E;
+      &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/slider-revolution/layers.css&#x22;&#x3E;
+      &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/slider-revolution/navigation.css&#x22;&#x3E;
+      &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/slider-revolution/settings.css&#x22;&#x3E;
+      &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/main.css&#x22;&#x3E;
+    &#x3C;/head&#x3E;
+    &#x3C;body data-spy=&#x22;scroll&#x22; data-target=&#x22;#navbar-toggle&#x22;&#x3E;
+      &#x3C;!-- Header starts --&#x3E;
+      &#x3C;header class=&#x22;header-section&#x22;&#x3E;
+        // Header content here
+      &lt;/header&gt;
+      &#x3C;!-- Intro section starts--&#x3E;
+      &#x3C;section id=&#x22;intro-section&#x22;&#x3E;
+      &#x3C;!-- Intro section ends--&#x3E;
+      &#x3C;!-- Marketing section starts--&#x3E;
+      &#x3C;section id=&#x22;services-section&#x22;&#x3E;
+      &#x3C;!-- Marketing section ends--&#x3E;
+      &#x3C;!-- Portfolio section starts--&#x3E;
+      &#x3C;section id=&#x22;portfolio&#x22;&#x3E;
+      &#x3C;!-- Portfolio section ends--&#x3E;
+      &#x3C;section id=&#x22;re-imagined&#x22;&#x3E;
+      &#x3C;!-- Re-imagined section ends--&#x3E;
+      &#x3C;section id=&#x22;prod-showcase&#x22;&#x3E;
+      &#x3C;!-- Product showcase section ends--&#x3E;
+      &#x3C;section id=&#x22;about-us&#x22;&#x3E;
+      &#x3C;!-- About us section ends--&#x3E;
+      &#x3C;section class=&#x22;dark-bg ptb90 mt50&#x22; id=&#x22;team&#x22;&#x3E;
+      &#x3C;!-- Team section ends--&#x3E;
+      &#x3C;section id=&#x22;blog-posts&#x22;&#x3E;
+      &#x3C;!-- Blog section ends--&#x3E;
+      &#x3C;section class=&#x22;pt120&#x22; id=&#x22;map&#x22;&#x3E;
+      &#x3C;!-- Map section ends--&#x3E;
+      &#x3C;section id=&#x22;contact&#x22;&#x3E;
+      &#x3C;!-- Footer section starts--&#x3E;
+      &#x3C;section id=&#x22;footer&#x22;&#x3E;
+      &#x3C;!-- Footer section ends--&#x3E;
+    &lt;/body&gt;
+  &lt;/html&gt;
+</pre>
+            </section>
+            <!-- /#markup -->
+            <hr />
+            <section id="styles">
+              <h3>Styles <small>Briefing on general styles and their customization</small></h3>
+              <div class="bs-callout bs-callout-info">
+                <p>
+                  Canal is built using <a href="http://sass-lang.com/guide" target="_blank">SASS</a>, you can find the source scss files in the bundled /source folder or edit the CSS files directly
+                </p>
+              </div>
+              <h4>Stylesheets</h4>
+              <p>Here's a list of the CSS files that the template uses, you can find more information on opening each file:</p>
+              <h4>SASS <small>Found in source/scss folder</small></h4>
+              <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>File Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>main.scss</code></td>
+                        <td>All the theme styles are here.</td>
+                    </tr>
+                    <tr>
+                        <td><code>libs.scss</code></td>
+                        <td>CSS file imports for plugins used in the template. Imports <a href="https://getbootstrap.com/" target="_blank">bootstrap 4 beta</a>, <a href="http://www.entypo.com/" target="_blank">Entypo icons</a>, <a href="http://fontawesome.io/" target="_blank">Font Awesome</a>, <a href="http://photoswipe.com/" target="_blank">photoswipe gallery</a> and Google fonts used in the template
+                          <div class="bs-callout bs-callout-info">
+                            <p>
+                              libs.scss is used in it's compiled and minified form in css/libs.css by the template
+                            </p>
+                          </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>twentytwenty.scss</code></td>
+                        <td>Source styles for ZURB's <a href="https://zurb.com/playground/twentytwenty" target="_blank">twentytwenty plugin</a> to show visual differences.</td>
+                    </tr>
+                </tbody>
+              </table>
+              <h4>Dark and Light layout</h4>
+              <p>Switch to dark layout by adding <code>dark</code> class to the body of any page</p>
+              <h4>Accent colors</h4>
+              <p>Currently there are 2 accent color options available on the theme, switch between them by adding <code>accent-1</code> and <code>accent-2</code> classes to the body tag on any page.</p>
+              <h4>CSS Structure</h4>
+              <p><code>styles.css</code> contains all of the specific stylings for the page. The file is separated into sections like so:</p>
+<!-- Code Block >> Start -->
+<pre class="pre-scrollable prettyprint linenums">
+/* === HEADER SECTION === */
+
+some code
+
+/* === NAVIGATION === */
+
+some code
+
+/* === BUTTONS === */
+
+some code
+
+/* === FOOTER SECTION === */
+
+some code
+
+etc, etc.</pre>
+<!-- Code Block >> End -->
+              <h4>Editing colors</h4>
+              <p>If you would like to edit the color, font, or style of any elements in one of these sections, you would do the following:</p>
+              <div class="bs-callout bs-callout-info">
+                <p>All the following changes would be made in <code>/css/main.css</code></p>
+              </div>
+              <h4>Changing header colors</h4>
+                    <p>You can change header's background color by editing the following color code in source/scss/main.scss or css/main.css if you prefer vanilla CSS.</p>
+                    <img src="img/header.png" class="img" alt="">
+                    <p></p>
+                    <img src="img/header-fixed.png" class="img" alt="">
+                    <span class="label label-default caption">Global header - Normal and Fixed</span>
+                    <p>There are 2 states of the header, normal and fixed, it switches to fixed automatically on scroll.</p>
+                    
+                    <!-- Code Block >> Start -->
+<pre class="prettyprint lnums linenums:101">
+/* Header */
+.header-section {
+   background: transparent;
+  ...
+}
+...
+...
+.header-section.fixed {
+  background: rgba(51, 51, 51, 0.9);
+</pre>
+                    <!-- Code Block >> End -->
+                    <div class="alert alert-info">
+                      <h4>Changing anything in general is simple</h4>
+                      <p>You can change all the styles from <code>source/scss/main.scss</code> or <code>css/main.css if you prefer vanilla CSS</code>, all other CSS files are libraries or plugins.</p>
+                    </div>
+
+                    <p>
+                      When changing elements like buttons and nav links, make sure to edit the hover states as well.
+                    </p>
+
+                    <div class="bs-callout bs-callout-info">
+                      <p>If you find that your new style is not overriding, it is most likely because of a specificity problem. Scroll down in your CSS file and make sure that there isn't a similar style that has more selector weight.</p>
+                    </div>
+
+              <h4>Changing icons</h4>
+              <p>
+                The theme utilizes Font Awesome hence you are free to use any of the icons in it. Take a look at the font awesome <a href="http://fortawesome.github.io/Font-Awesome/3.2.1/cheatsheet/">cheatsheet</a> for the complete set of icons you can use
+              </p>
+              <p>
+                All the icons are present in the markup as <code>i</code> tags as follows:
+                <pre class="prettyprint lnums linenums">
+&lt;i class=&quot;icon-class-name&quot;&gt;&lt;/i&gt;
+</pre>
+              </p>
+              <p>
+                The class name decides which icon shows up from the FontAwesome library, which you can refer to over at the <a href="http://fortawesome.github.io/Font-Awesome/3.2.1/cheatsheet/">cheatsheet</a>.
+              </p>
+            </section>
+            <!-- #styles section ends -->
+            <hr />
+            <section id="js">
+              <h3>Javascript <small>JavaScript customization and highlights</small></h3>
+              <h4>JS files</h4>
+              <p>The theme utilizes a couple of jquery plugins</p>
+              <div class="alert alert-info">
+                <p>You'll find the calls to these plugins in <code>js/plugins.js</code> as <a href="https://codekitapp.com/help/javascript/">@codekit-prepend special comments</a>, these are set up to be picked by <a href="https://codekitapp.com/">Codekit</a> and compiled into a minified version - <code>js/plugins-min.js</code></p>
+              </div>
+              <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>boostrap.min.js</code></td>
+                        <td>A collection of plugins from bootstrap framework.</td>
+                    </tr>
+                    <tr>
+                        <td><code>jquery.min.js</code></td>
+                        <td>jQuery is a Javascript library that greatly reduces the amount of code that you must write.</td>
+                    </tr>
+                    <tr>
+                        <td><code>jquery.themepunch.revolution.min.js</code> and multiple supporting plugins</td>
+                        <td><a href="http://codecanyon.net/item/slider-revolution-responsive-jquery-plugin/2580848" target="_blank">Revolution slider plugin</a> that comes bundled with the theme!</td>
+                    </tr>
+                    <tr>
+                        <td><code>shuffle.js</code></td>
+                        <td><a href="https://vestride.github.io/Shuffle/" target="_blank">Shuffle JS</a> to make a sortable list of images in portfolio section.</td>
+                    </tr>
+                    <tr>
+                        <td><code>photoswipe.js</code></td>
+                        <td><a href="http://photoswipe.com/">Photoswipe</a> JS gallery for the lightbox in the portfolio section.</td>
+                    </tr>
+                    <tr>
+                        <td><code>jquery.twentytwenty.js</code></td>
+                        <td>A beautiful visual diff tool called <a href="https://zurb.com/playground/twentytwenty">Twenty Twenty from Zurb foundation</a>, used in 'Compare and see' section</a>.</td>
+                    </tr>
+                    <tr>
+                        <td><code>main.js</code></td>
+                        <td>This is where all of the plugins stated above are set up.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+          
+              <h4 id="rev-js">Revolution Slider <small><a href="https://revolution.themepunch.com/jquery" target="_blank">Live Guide &amp; examples</a></small></h4>
+              <div class="bs-callout bs-callout-info">
+                I recommend checking out revolution slider's <a href="https://www.themepunch.com/revsliderjquery-doc/slider-revolution-jquery-5-x-documentation/" target="_blank">online documentation</a> and examples for a better grasp of it's usage.
+              </div>
+              <p>
+                Configuration for Revolution slider is done in <code>js/main.js</code> starting from <code>line #4</code>:
+              </p>
+              <pre class="prettyprint js linenums:19">
+// Setting up Revolution slider
+$('#rev_slider_1').show().revolution({
+  sliderType: "hero",
+  sliderLayout: "fullscreen",
+  dottedOverlay:"none",
+  delay:9000,
+  navigation: {
+  },
+  responsiveLevels:[1240,1024,778,480],
+  visibilityLevels:[1240,1024,778,480],
+  gridwidth:[1400,1240,778,480],
+  gridheight:[768,768,960,720],
+  lazyType:"none",
+  spinner:"off",
+  autoHeight:"off",
+  disableProgressBar:"on",
+  hideThumbsOnMobile:"off",
+  hideSliderAtLimit:0,
+  hideCaptionAtLimit:0,
+  hideAllCaptionAtLilmit:0,
+  debugMode:false,
+  fallbacks: {
+      simplifyAll:"off",
+      disableFocusListener:false,
+  }
+});
+...
+...
+              </pre>
+              
+            </section>
+            <!-- js section ends -->
+            <section id="gmap">
+              <h4>Setting up Google maps</h4>
+              <div class="bs-callout bs-callout-info">
+                You need an <a href="https://developers.google.com/maps/documentation/javascript/get-api-key">API key</a> for the map in Contact section to work. Just click on "Get a key", give your project a name and hit "Enable API".
+              </div>
+              <p>
+                After you have an API key, head over to <code>index.html</code> or <code>index.jade</code>, search for this text --> "PUT-KEY-HERE" and replace it with your key.
+              </p>
+              <p>To change location pinned on the map, you need to enter it's co-ordinates on line #143 in <code>js/main.js</code>. You can obtain such co-ordinates using one of many sites like <a href="https://www.maps.ie/coordinates.html">this one</a>.</p>
+            </section>
+          </div>
+          <!-- .col-md-9 ends -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- container ends -->
+    </div>
+    <!-- wrap ends -->
+
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted credit">Canal HTML docs by <a href="http://www.vishusingh.com">Vishu Singh</a>.</p>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/google-code-prettify/prettify.js"></script>
+  <script>
+    $(document).ready(function() {
+      // make code pretty
+      window.prettyPrint && prettyPrint();
+    });
+  </script>
+  </body>
+</html>

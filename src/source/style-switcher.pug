@@ -1,0 +1,60 @@
+#style-switcher
+  a.handle(href="#")
+    i.fa.fa-eyedropper
+  .style-switcher-body
+    p Color Options
+    ul.color-chooser
+      li
+        a.accent-1(href="#")
+      li
+        a.accent-2(href="#")
+      li
+        a.accent-3(href="#")
+    p Choose theme
+    ul.theme-chooser
+      li
+        a.light-theme(href="#") Light
+      li
+        a.dark-theme(href="#") Dark
+    
+append scripts
+  script.
+    var checker = 0;
+    function jqueryLoaded() {
+      clearInterval(checker);
+      $(document).ready(function() {
+        var switcher = $('#style-switcher');
+        switcher.find('.handle').on( 'click', function(e) {
+          e.preventDefault();
+          $('#style-switcher').toggleClass('active');
+        });
+        switcher.find('.accent-1').on( 'click', function(e) {
+          e.preventDefault();
+          $('body').removeClass('accent-2');
+          $('body').toggleClass('accent-1');
+        });
+        switcher.find('.accent-2').on( 'click', function(e) {
+          e.preventDefault();
+          $('body').removeClass('accent-1');          
+          $('body').toggleClass('accent-2');
+        });
+        switcher.find('.light-theme').on( 'click', function(e){
+          e.preventDefault();
+          $('body').removeClass('dark');
+        });
+        switcher.find('.dark-theme').on( 'click', function(e){
+          e.preventDefault();
+          $('body').addClass('dark');
+        });
+      });
+    }
+    function checkJquery() {
+      if (window.jQuery) {
+              jqueryLoaded();
+      } 
+      if(checker == 0) {
+        //alert('Setting up interval');
+        checker = window.setInterval(checkJquery, 100);
+      }
+    }	
+    checkJquery();

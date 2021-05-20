@@ -1,0 +1,45 @@
+{
+  "name": "my-new-project",
+  "authors": [
+    "Borcherd van brakell <borcherd@me.com> "
+  ],
+  "description": "CodeKit automatically generated this file. You should customize it according to: https://github.com/bower/spec/blob/master/json.md",
+  "main": [
+    "index.html",
+    "main.js"
+  ],
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "keywords": [
+    "none"
+  ],
+  "license": "MIT",
+  "homepage": "https://google.com",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/foo/bar.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true,
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "jquery.shuffle": "*",
+    "luminous": "^1.0.1",
+    "jquery.stellar": "^0.6.2",
+    "open-iconic": "^1.1.1",
+    "photoswipe": "photo.swipe#^4.1.2",
+    "bootstrap": "bootstrap#v4-dev",
+    "flipclock": "FlipClock#^0.7.7"
+  }
+}

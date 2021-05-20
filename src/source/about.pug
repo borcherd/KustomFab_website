@@ -1,0 +1,76 @@
+extends layout.pug
+append styles
+  link(rel="stylesheet" href="css/flipclock.css")
+
+append vars
+  - var headerClass = 'dark'
+  - var subPage = true
+block content
+  .page-header.page-header-2
+    h3.page-title.text-center.breadcrumb-title About
+    ul.breadcrumbs.list-inline.text-center
+      li.list-inline-item
+        a Culture
+      li.list-inline-item
+        a Team
+      li.list-inline-item
+        a Employee
+    
+  section#about-us
+    .container.pt120.pb50
+      .row
+          .col-md-12
+            h2.text-center Meet the Company
+            p.sub-title.text-center It's all about the culture
+      .row
+        .col-md-6
+          img(src="http://via.placeholder.com/500x400" alt="About us")
+        .col-md-6
+          h3 Taking pride in our culture
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dolor lorem, congue fringilla tellus feugiat, ullamcorper venenatis justo. Nunc vel pharetra diam, nec malesuada mauris. Vestibulum vel eros efficitur, sagittis ex vel, blandit quam. Morbi nunc massa, lobortis molestie sapien nec
+          blockquote Seeing things to the very end is embued in our culture, we never let a teammate down.
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dolor lorem, congue fringilla tellus feugiat, ullamcorper venenatis justo. Nunc vel pharetra diam, nec malesuada mauris. Vestibulum vel eros efficitur, sagittis ex vel, blandit quam. Morbi nunc massa, lobortis molestie sapien nec
+  // About us section ends
+  
+  section#team.dark-bg.ptb90.mt50
+    .container-fluid
+      .row
+        .col-md-12
+          h2.text-center Meet our team
+          p.sub-title.text-center Ultimate building blocks of our company
+      .container
+        .row
+          .col-md-3
+            img.rounded(src="http://via.placeholder.com/350x350", alt="Team player")
+            h3.text-center Elon Wonder
+            p.text-center.title Chief of humor
+          .col-md-3
+            img.rounded(src="http://via.placeholder.com/350x350", alt="Team player")
+            h3.text-center Stevie Musk
+            p.text-center.title Head of Lunches
+          .col-md-3
+            img.rounded(src="http://via.placeholder.com/350x350", alt="Team player")
+            h3.text-center Jane Connor
+            p.text-center.title Chief of Stuff
+          .col-md-3
+            img.rounded(src="http://via.placeholder.com/350x350", alt="Team player")
+            h3.text-center Jessica James
+            p.text-center.title Chief of Everything
+        .row
+          .col-md-3
+            img.rounded(src="http://via.placeholder.com/350x350", alt="Team player")
+            h3.text-center Jane Connor
+            p.text-center.title Chief of Stuff
+          .col-md-3
+            img.rounded(src="http://via.placeholder.com/350x350", alt="Team player")
+            h3.text-center Jessica James
+            p.text-center.title Chief of Everything
+          .col-md-3
+            img.rounded(src="http://via.placeholder.com/350x350", alt="Team player")
+            h3.text-center Elon Wonder
+            p.text-center.title Chief of humor
+          .col-md-3
+            img.rounded(src="http://via.placeholder.com/350x350", alt="Team player")
+            h3.text-center Stevie Musk
+            p.text-center.title Head of Lunches
+  // Team section ends

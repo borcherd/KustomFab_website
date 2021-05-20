@@ -1,0 +1,48 @@
+#style-switcher {
+  background: #08090e;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  position: fixed;
+  right: -170px;
+  top: 19%;
+  width: 170px;
+  transition-duration: 0.3s; }
+  #style-switcher.active {
+    right: 0px; }
+  #style-switcher .handle {
+    background: #08090e;
+    display: block;
+    padding: 17px 21px;
+    position: absolute;
+    top: 0;
+    left: -58px; }
+    #style-switcher .handle i {
+      color: white; }
+  #style-switcher .style-switcher-body {
+    color: white;
+    padding: 19px 20px 29px; }
+  #style-switcher ul {
+    margin: 0;
+    padding: 0; }
+    #style-switcher ul li {
+      display: inline-block;
+      margin-right: 10px; }
+    #style-switcher ul.color-chooser {
+      margin-bottom: 20px; }
+      #style-switcher ul.color-chooser a {
+        display: block;
+        height: 30px;
+        width: 30px; }
+        #style-switcher ul.color-chooser a.accent-1 {
+          background: #f2b825; }
+        #style-switcher ul.color-chooser a.accent-2 {
+          background: #0c6bd4; }
+    #style-switcher ul.theme-chooser a:hover {
+      text-decoration: none; }
+    #style-switcher ul.theme-chooser a.light-theme {
+      background: white;
+      color: black;
+      padding: 5px 10px; }
+    #style-switcher ul.theme-chooser a.dark-theme {
+      background: black;
+      color: white;
+      padding: 5px 10px; }
