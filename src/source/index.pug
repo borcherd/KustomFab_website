@@ -13,39 +13,33 @@ block content
       .row.text-center
         .col-md-4.col-sm-4
           .product-card
-            .icon.mb20
-              i.fa.fa-superpowers(aria-hidden="true")
+            img(src="./img/welding_icon.png", alt="welding" style='width:100px; height:100px;')
             h4 Welding 
             p Welding and grinding is part of our everyday routine. This can vary from doing "top-chops" to removing rust.
         .col-md-4.col-sm-4
           .product-card
-            .icon.mb20
-              i.fa.fa-pied-piper(aria-hidden="true")
+            img(src="./img/chassis_icon.png", alt="chassis" style='width:100px; height:100px;')
             h4 Chassis overhaul
             p We can do everything to make your ride more comfortable. We create custom four/two link systems, new bodymounts, modernize axles etc.
         .col-md-4.col-sm-4
           .product-card
-            .icon.mb20
-              i.fa.fa-puzzle-piece(aria-hidden="true")
+            img(src="./img/car_icon.png", alt="car" style='width:100px; height:100px;')
             h4 Body work
             p Everything that is made out of steel, is our speciality. We modify bodywork on nearly every car before 1970.
       .row.text-center
         .col-md-4.col-sm-4
           .product-card
-            .icon.mb20
-              i.fa.fa-mercury(aria-hidden="true")
+            img(src="./img/airride_icon.png", alt="airride" style='width:100px; height:100px;')
             h4 Air-ride systems
             p If you want your car as low as possible, air ride is the way to go. We install air ride specific systems on every chassis.
         .col-md-4.col-sm-4
           .product-card
-            .icon.mb20
-              i.fa.fa-object-ungroup(aria-hidden="true")
+            img(src="./img/engine_icon.png", alt="engine" style='width:100px; height:100px;')
             h4 Engine swaps
             p Old cars often don't have the power they should have, and this can be solved by modernizing the drivetrain. 
         .col-md-4.col-sm-4
           .product-card
-            .icon.mb20
-              i.fa.fa-line-chart(aria-hidden="true")
+            img(src="./img/wiring_icon.png", alt="wiring" style='width:100px; height:100px;')
             h4 Electical wiring
             p We do everything from fixing electrical issues, to converting an older car to 12v.
   // Marketing section ends
@@ -206,11 +200,11 @@ block content
             .form-group
               input.form-control(type="tel", placeholder="Your phone", name="phone")
             .form-group
-              textarea.form-control(rows="5", placeholder="Your Message", name="message")
+              textarea.form-control(rows="5", placeholder="Your Message", name="message", required)
             button.btn.btn-lg(type="submit") Send Message
 
 append scripts
-  script(async, defer, src!="https://maps.googleapis.com/maps/api/js?key=PUT-KEY-HERE&callback=initMap")
+  script(async, defer, src!="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgeLGaA1e_xyZxBJjq8k4HD37tvMCQStw&callback=initMap")
   script.
     // Setting up Revolution slider with a solid cross-browser code waiting for the page to load
     function loadJSAtOnload() {
