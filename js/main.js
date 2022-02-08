@@ -147,7 +147,7 @@ $(document).ready(function () {
 // to get map working for you.
 function initMap() {
   // Update these coordinates to change location in the map
-  var location = new google.maps.LatLng(41.850, -87.650);
+  var location = new google.maps.LatLng(50.965192, 5.690414);
 
   var map = new google.maps.Map(document.getElementById('google-map'), {
     center: location,
